@@ -4,3 +4,80 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    /* Basic vars */
+    --major: #000;
+    --minor: #fff;
+    --accent: #666;
+
+    /* Other */
+    --main-font: "Inter-Variable";
+    --special-font: "PressStart2P";
+    --main-background: repeating-linear-gradient(
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            #d3d3d3,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+}
+
+:root.theme-dark {
+    /* Basic vars */
+    --major: #00cc14;
+    --minor: #000;
+    --accent: #666;
+
+    /* Other */
+    --main-font: "Inter-Variable";
+    --special-font: "PressStart2P";
+    --main-background: repeating-linear-gradient(
+            #000,
+            #000 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            #000,
+            #000 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        linear-gradient(#007f0c, #004306);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Basic vars */
+        --major: #00cc14;
+        --minor: #000;
+        --accent: #666;
+
+        /* Other */
+        --main-font: "Inter-Variable";
+        --special-font: "PressStart2P";
+        --main-background: repeating-linear-gradient(
+                #000,
+                #000 2px,
+                transparent 2px,
+                transparent 4px
+            ),
+            repeating-linear-gradient(
+                90deg,
+                #000,
+                #000 2px,
+                transparent 2px,
+                transparent 4px
+            ),
+            linear-gradient(#007f0c, #004306);
+    }
+}
