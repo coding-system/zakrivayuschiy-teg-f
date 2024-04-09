@@ -82,7 +82,11 @@
 }
 
 .theme-menu__button:hover {
-   color: var(--accent);
+   opacity: 0.6;
+}
+
+.theme-menu__button:disabled {
+   opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {
@@ -121,8 +125,32 @@
    line-height: auto;
 }
 
+.card__picture {
+   position: relative;
+}
+
+.card__label {
+   position: absolute;
+   right: 10px;
+   top: 25px;
+   font-family: var(--special-font), Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   color: var(--major);
+   mix-blend-mode: hard-light;
+   text-shadow: 0 0 0 var(--minor);
+}
+
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+   .card__label {
+      -webkit-text-stroke: 1px var(--minor);
+      text-stroke: 1px var(--minor);
+      text-shadow: none;
+   }
+}
+
 .card_img {
-   border: none;
    width: 100%;
 }
 
