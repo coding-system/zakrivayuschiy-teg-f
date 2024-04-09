@@ -22,14 +22,14 @@
 
 @keyframes selected {
    0% {
-     translate: 0;
+      translate: 0;
    }
 
    100% {
       translate: -4px;
    }
- }
+}
 
- /* .theme-menu__button:focus-visible::after {
+/* .theme-menu__button:focus-visible::after {
    transform: scale(1);
 } */
