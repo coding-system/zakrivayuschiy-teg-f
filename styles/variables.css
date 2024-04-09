@@ -1,25 +1,25 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    /* Basic vars */
-    --major: #000;
-    --minor: #fff;
-    --accent: #666;
+   /* Basic vars */
+   --major: #000;
+   --minor: #fff;
+   --accent: #666;
 
-    /* Other */
-    --main-font: "Inter-Variable";
-    --special-font: "PressStart2P";
-    --main-background: repeating-linear-gradient(
-            #d3d3d3,
-            #d3d3d3 2px,
-            transparent 2px,
-            transparent 4px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            #d3d3d3,
-            #d3d3d3 2px,
-            transparent 2px,
-            transparent 4px
-        ),
-        linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+   /* Other */
+   --main-font: "Inter-Variable";
+   --special-font: "PressStart2P";
+   --main-background: repeating-linear-gradient(
+         #d3d3d3,
+         #d3d3d3 2px,
+         transparent 2px,
+         transparent 4px
+      ),
+      repeating-linear-gradient(
+         90deg,
+         #d3d3d3,
+         #d3d3d3 2px,
+         transparent 2px,
+         transparent 4px
+      ),
+      linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
