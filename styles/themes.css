@@ -11,7 +11,14 @@
    --minor: #fff;
    --accent: #666;
 
+   /* Colors of LIKE */
+   --sparks: #ff0000;
+   --contour: #000;
+   --main-body: #ff0000;
+   --core: #fff;
+
    /* Other */
+   --like-button-color: var(--minor);
    --main-font: "Inter-Variable";
    --special-font: "PressStart2P";
    --main-background: repeating-linear-gradient(
@@ -36,7 +43,14 @@
    --minor: #000;
    --accent: #398340;
 
+   /* Colors of LIKE */
+   --sparks: #ff0000;
+   --contour: #00cc14;
+   --main-body: #ff0000;
+   --core: #fff;
+
    /* Other */
+   --like-button-color: var(--major);
    --main-font: "Inter-Variable";
    --special-font: "PressStart2P";
    --main-background: repeating-linear-gradient(
@@ -62,7 +76,14 @@
       --minor: #000;
       --accent: #398340;
 
+      /* Colors of LIKE */
+      --sparks: #ff0000;
+      --contour: #00cc14;
+      --main-body: #ff0000;
+      --core: #fff;
+
       /* Other */
+      --like-button-color: var(--major);
       --main-font: "Inter-Variable";
       --special-font: "PressStart2P";
       --main-background: repeating-linear-gradient(
