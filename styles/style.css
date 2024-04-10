@@ -13,7 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
 .page {
    margin: 100px 0;
    min-inline-size: 320px;
@@ -207,9 +206,21 @@
 }
 
 .card__icon-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 38px;
    height: 38px;
-   border: none;
+   border: 2px solid transparent;
+   transition: border 0.3s ease;
+}
+
+.card__icon-button:focus {
+   outline: none;
+}
+
+.card__icon-button:focus-visible {
+   border: 2px solid var(--major);
 }
 
 .like-icon {
@@ -217,18 +228,43 @@
 }
 
 .button__text {
+   color: var(--minor);
+   position: relative;
    text-align: center;
+   z-index: 2;
+   mix-blend-mode: difference;
 }
 
 .card__like-button {
+   position: relative;
    width: 130px;
    height: 38px;
+   transition: 0.3s ease;
 }
 
-.card__like-button:hover {
-   background-color: var(--major);
-   color: var(--minor);
+.card__like-button::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   transform: scale(0, 1);
+   transition: 0.5s ease-in-out;
+   transform-origin: left;
 }
+
+.card__like-button:hover::before {
+   transform: scale(1, 1);
+}
+
+.card__like-button:hover .button__text {
+   /* color: var(--minor); */
+   /* mix-blend-mode: difference; */
+   
+}
+
 
 .card__like-button:focus {
    outline: none;
@@ -252,6 +288,7 @@
 }
 
 .save__button {
+   position: relative;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -259,6 +296,23 @@
    gap: 8px;
    width: 306px;
    height: 84px;
+}
+
+.save__button::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   transform: scale(0, 1);
+   transition: 0.5s ease-in-out;
+   transform-origin: left;
+}
+
+.save__button:hover::before {
+   transform: scale(1, 1);
 }
 
 /* Медиазапросы */
