@@ -129,7 +129,7 @@
    display: grid;
    grid-template-columns: 100%;
    grid-template-rows: auto;
-   gap: 50px;
+   gap: 48px;
 }
 
 .card__item {
@@ -194,7 +194,7 @@
    padding: 0 25px;
    display: flex;
    justify-content: end;
-   gap: 12px;
+   align-items: center;
 }
 
 .button {
@@ -251,11 +251,11 @@
 
 .card__icon-button {
    background: none;
-   /* display: flex;
+   display: flex;
    justify-content: center;
    align-items: center;
-   width: 38px;
-   height: 38px; */
+   /* width: 38px; */
+   /* height: 38px; */
    border: 2px solid transparent;
    transition: border 0.3s ease;
 }
@@ -269,7 +269,8 @@
 }
 
 .like-icon {
-   /* background: red; */
+   /* width: 38px;
+   height: 38px; */
 }
 
 .button__text {
@@ -455,10 +456,4 @@
 .like-icon.is-liked .contour {
    fill: var(--accent);
    transition: all 0.3s linear 0.06s;
-}
-
-/* Liked hover */
-.page:has(.is-liked) .like-icon:hover .sparks {
-   fill: var(--accent);
-   transition: all 0.3s linear 0.1s;
 }
