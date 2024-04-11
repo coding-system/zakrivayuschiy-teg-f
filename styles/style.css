@@ -370,6 +370,10 @@
       min-width: 700px;
    }
 
+   .header {
+      padding-top: 136px;
+   }
+
    .dialog {
       padding: 30px;
    }
