@@ -343,33 +343,34 @@
 
 /* Default */
 .like-icon .sparks {
-   fill: none;
+   fill: var(--minor);
    opacity: 0;
+   transition: all 0.3s linear 0.05s;
 }
 
 .like-icon .contour {
    fill: var(--major);
    opacity: 1;
+   transition: all 0.3s linear 0.05s;
 }
 
 .like-icon .main-body {
-   fill: none;
+   fill: var(--minor);
    opacity: 0;
-   transition: all 0.5s linear 0.05s;
+   transition: all 0.3s linear 0.05s;
 }
 
 .like-icon .core {
-   fill: none;
+   fill: var(--minor);
    opacity: 0;
-   transition: all 0.5s linear 0.05s;
+   transition: all 0.3s linear 0.05s;
 }
 
-/* Hover */
-
+/* Hiover */
 .like-icon:hover .main-body {
    fill: var(--major);
    opacity: 1;
-   transition: all 0.5s linear;
+   transition: all 0.3s linear 0.05s;
 }
 
 .like-icon:hover .core {
@@ -379,15 +380,29 @@
 }
 
 /* Active */
-
 .like-icon:active .main-body {
    fill: var(--accent);
    opacity: 1;
-   transition: all 0.5s linear;
+   transition: all 0.3s linear 0.05s;
 }
 
 .like-icon:active .core {
    fill: var(--accent);
    opacity: 1;
    transition: all 0.3s linear;
+}
+
+/* Is Liked */
+.like-icon.is-liked .contour {
+   fill: var(--accent);
+}
+
+.like-icon.is-liked .main-body {
+   opacity: 1;
+   fill: var(--accent);
+}
+
+.like-icon.is-liked .core {
+   opacity: 1;
+   fill: var(--accent);
 }
