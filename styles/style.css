@@ -295,6 +295,11 @@
    height: 84px;
 }
 
+.save__icon {
+   fill: var(--major);
+   mix-blend-mode: difference;
+}
+
 .save__button::before {
    content: "";
    position: absolute;
@@ -318,6 +323,13 @@
 
 .save__button:focus-visible {
    box-shadow: 2px 2px 0 0 var(--major);
+}
+
+.dialog {
+   width: 341px;
+   height: 191px;
+   background-color: var(--minor);
+   
 }
 
 /* Медиазапросы */
@@ -420,3 +432,8 @@
    transition: all 0.3s linear 0.1s;
 }
 
+.icon {
+   width: 28px;
+   height: 28px;
+   mix-blend-mode: difference;
+ }

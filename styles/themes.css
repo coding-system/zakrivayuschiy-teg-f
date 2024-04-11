@@ -19,6 +19,7 @@
 
    /* Other */
    --like-button-color: var(--minor);
+   --save-icon-color: var(--minor);
    --main-font: "Inter-Variable";
    --special-font: "PressStart2P";
    --main-background: repeating-linear-gradient(
@@ -51,6 +52,7 @@
 
    /* Other */
    --like-button-color: var(--major);
+   --save-icon-color: var(--major);
    --main-font: "Inter-Variable";
    --special-font: "PressStart2P";
    --main-background: repeating-linear-gradient(
@@ -84,6 +86,7 @@
 
       /* Other */
       --like-button-color: var(--major);
+      --save-icon-color: var(--major);
       --main-font: "Inter-Variable";
       --special-font: "PressStart2P";
       --main-background: repeating-linear-gradient(
