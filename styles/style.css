@@ -396,7 +396,7 @@
    transition: all 0.3s linear;
 }
 
-/* Is Liked */
+/* Liked */
 .like-icon.is-liked .core {
    fill: var(--accent);
    opacity: 1;
@@ -414,8 +414,9 @@
    transition: all 0.3s linear 0.06s;
 }
 
-
-
-
-
+/* Liked hover */
+.page:has(.is-liked) .like-icon:hover .sparks {
+   fill: var(--accent);
+   transition: all 0.3s linear 0.1s;
+}
 
