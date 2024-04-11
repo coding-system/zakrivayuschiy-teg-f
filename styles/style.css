@@ -203,6 +203,7 @@
    font-family: var(--special-font), Arial, Helvetica, sans-serif;
    font-size: 14px;
    line-height: 90%;
+   color: var(--major);
 }
 
 .card__icon-button {
@@ -295,11 +296,6 @@
    height: 84px;
 }
 
-.save__icon {
-   fill: var(--major);
-   mix-blend-mode: difference;
-}
-
 .save__button::before {
    content: "";
    position: absolute;
@@ -325,11 +321,53 @@
    box-shadow: 2px 2px 0 0 var(--major);
 }
 
+.save__icon {
+   width: 28px;
+   height: 28px;
+   mix-blend-mode: difference;
+ }
+
 .dialog {
-   width: 341px;
-   height: 191px;
+   display: none;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   justify-content: space-between;
+   border: 2px solid var(--major);
+   /* width: 341px; */
+   /* height: 191px; */
    background-color: var(--minor);
-   
+   padding: 30px 42px;
+}
+
+.dialog__message {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 257px;
+}
+
+.dialog__message .save__icon {
+   width: 39px;
+   height: 39px;
+}
+
+.dialog__text {
+   width: 198px;
+   font-size: 14px;
+   font-family: var(--special-font);
+   font-weight: normal;
+   color: var(--major);
+   text-transform: uppercase;
+   line-height: 150%;
+}
+
+.dialog__button {
+   width: 257px;
+   height: 38px;
+   font-size: 14px;
+
+
 }
 
 /* Медиазапросы */
@@ -431,9 +469,3 @@
    fill: var(--accent);
    transition: all 0.3s linear 0.1s;
 }
-
-.icon {
-   width: 28px;
-   height: 28px;
-   mix-blend-mode: difference;
- }
