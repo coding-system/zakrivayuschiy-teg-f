@@ -3,9 +3,10 @@
    /* Basic vars */
    --major: #000;
    --minor: #fff;
-   --accent: #666;
+
 
    /* Colors of LIKE */
+   --accent: #ff0000;
    --sparks: #ff0000;
    --contour: #000;
    --main-body: #ff0000;

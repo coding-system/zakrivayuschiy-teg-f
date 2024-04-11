@@ -9,9 +9,9 @@
    /* Basic vars */
    --major: #000;
    --minor: #fff;
-   --accent: #666;
 
    /* Colors of LIKE */
+   --accent: #ff0000;
    --sparks: #ff0000;
    --contour: #000;
    --main-body: #ff0000;
@@ -41,13 +41,13 @@
    /* Basic vars */
    --major: #00cc14;
    --minor: #000;
-   --accent: #398340;
 
    /* Colors of LIKE */
+   --accent: #ff0000;
    --sparks: #ff0000;
    --contour: #00cc14;
    --main-body: #ff0000;
-   --core: #fff;
+   --core: #000;
 
    /* Other */
    --like-button-color: var(--major);
@@ -74,13 +74,13 @@
       /* Basic vars */
       --major: #00cc14;
       --minor: #000;
-      --accent: #398340;
 
       /* Colors of LIKE */
+      --accent: #ff0000;
       --sparks: #ff0000;
       --contour: #00cc14;
       --main-body: #ff0000;
-      --core: #fff;
+      --core: #000;
 
       /* Other */
       --like-button-color: var(--major);
