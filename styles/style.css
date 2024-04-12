@@ -18,12 +18,19 @@
    margin: 100px auto;
    min-inline-size: 320px;
    min-block-size: 100dvb;
+   font-family: "Inter", Arial, Helvetica, sans-serif;
    background-image: var(--main-background);
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    color: var(--major);
+}
+
+@supports (font-variation-settings: normal) {
+   .page {
+      font-family: var(--main-background), Arial, Helvetica, sans-serif;
+   }
 }
 
 .header {
