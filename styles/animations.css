@@ -12,6 +12,78 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+/* ANIMATION OF LIKE */
+
+/* Default */
+.like-icon .sparks {
+   fill: var(--minor);
+   opacity: 1;
+   transition: all 0.3s linear 0.05s;
+}
+
+.like-icon .contour {
+   fill: var(--major);
+   opacity: 1;
+   transition: all 0.1s linear;
+}
+
+.like-icon .main-body {
+   fill: var(--minor);
+   opacity: 0;
+   transition: all 0.3s linear 0.05s;
+}
+
+.like-icon .core {
+   fill: var(--minor);
+   opacity: 0;
+   transition: all 0.3s linear 0.05s;
+}
+
+/* Hover */
+.like-icon:hover .main-body {
+   fill: var(--major);
+   opacity: 1;
+   transition: all 0.3s linear 0.05s;
+}
+
+.like-icon:hover .core {
+   fill: var(--major);
+   opacity: 1;
+   transition: all 0.3s linear;
+}
+
+/* Active */
+.like-icon:active .main-body {
+   fill: var(--accent);
+   opacity: 1;
+   transition: all 0.3s linear 0.05s;
+}
+
+.like-icon:active .core {
+   fill: var(--accent);
+   opacity: 1;
+   transition: all 0.3s linear;
+}
+
+/* Liked */
+.like-icon.is-liked .core {
+   fill: var(--accent);
+   opacity: 1;
+   transition: all 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+   fill: var(--accent);
+   opacity: 1;
+   transition: all 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+   fill: var(--accent);
+   transition: all 0.3s linear 0.06s;
+}
+
+/* Selected theme marker */
 .theme-menu__button:disabled::before {
    animation-name: selected;
    animation-duration: 0.5s;
@@ -20,7 +92,8 @@
    animation-direction: alternate;
 }
 
-.page:has(.is-liked) .heart {
+/* Heart scale */
+.card__item:has(.is-liked) .heart {
    animation-name: heart-is-liked;
    animation-duration: 0.3s;
    animation-delay: 0.1s;
@@ -30,7 +103,8 @@
    transform-origin: center;
 }
 
-.page:has(.is-liked) .sparks {
+/* Sparks light */
+.card__item:has(.is-liked) .sparks {
    animation-name: sparks-is-liked;
    animation-duration: 0.3s;
    animation-delay: 0.3s;
