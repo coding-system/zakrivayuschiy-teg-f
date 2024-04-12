@@ -18,18 +18,19 @@
    margin: 100px auto;
    min-inline-size: 320px;
    min-block-size: 100dvb;
-   font-family: "Inter", Arial, Helvetica, sans-serif;
+   font-family: var(--main-font), Arial, Helvetica, sans-serif;
    background-image: var(--main-background);
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    color: var(--major);
+   font-variation-settings: "wght" var(--content-text-wght);
 }
 
 @supports (font-variation-settings: normal) {
    .page {
-      font-family: var(--main-background), Arial, Helvetica, sans-serif;
+      font-family: var(--main-font), Arial, Helvetica, sans-serif;
    }
 }
 
@@ -140,6 +141,7 @@
 }
 
 .card__item {
+   font-variation-settings: "wght" var(--content-text-wght);
    padding-bottom: 25px;
    /* display: flex;
    flex-direction: column; */
@@ -150,7 +152,8 @@
 .card__title {
    padding: 4px 10px 6px 10px;
    font-size: 18px;
-   font-weight: bold;
+   /* font-weight: bold; */
+   font-variation-settings: "wght" var(--content-title-wght);
    letter-spacing: 0%;
    line-height: auto;
 }
@@ -348,9 +351,6 @@
    color: var(--floppy-icon-color);
 }
 
-.icon {
-}
-
 .dialog {
    display: flex;
    flex-direction: column;
@@ -451,7 +451,7 @@
 .term {
    position: relative;
    font-weight: 800;
-   text-shadow: 1px 1px 2px var(--accent);
+   text-shadow: 1px 1px 0 var(--accent);
 }
 
 .term:hover {
@@ -459,15 +459,16 @@
 }
 
 .term:hover::before {
-   content: "Подход в вёрстке, когда итоговый результат максимально точно, пиксель в пиксель, совпадает с дизайнерским макетом";
+   content: "Подход в вёрстке, когда итоговый результат максимально точно, пиксель в пиксель, совпадает с дизайнерским макетомПодход в вёрстке, когда итоговый результат максимально точно, пиксель в пиксель, совпадает с дизайнерским макетомПодход в вёрстке, когда итоговый результат максимально точно, пиксель в пиксель, совпадает с дизайнерским макетомПодход в вёрстке, когда итоговый результат максимально точно, пиксель в пиксель, совпадает с дизайнерским макетом";
    position: absolute;
-   top: 10px;
-   right: 10px;
-   padding: 5px;
-   width: 261px;
+   top: 20px;
+   right: 20px;
+   padding: 10px 12px;
+   min-width: 266px;
    background-color: var(--minor);
    border: 2px solid var(--major);
-   box-shadow: 2px 2px 4px var(--accent);
+   box-shadow: 2px 2px 0 var(--accent);
    text-shadow: none;
    font-size: 14px;
+   z-index: 3;
 }

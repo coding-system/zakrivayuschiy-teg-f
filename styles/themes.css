@@ -10,12 +10,15 @@
    --major: #000;
    --minor: #fff;
 
+   /* Font */
+   --content-text-wght: 400;
+   --content-title-wght: 700;
+
    /* Colors of LIKE */
    --accent: #ff0000;
 
    /* Other */
    --like-button-color: var(--minor);
-   --save-icon-color: var(--minor);
    --floppy-icon-color: var(--minor);
    --main-font: "Inter-Variable";
    --special-font: "PressStart2P";
@@ -40,12 +43,15 @@
    --major: #00cc14;
    --minor: #000;
 
+   /* Font */
+   --content-text-wght: 465;
+   --content-title-wght: 785;
+
    /* Colors of LIKE */
    --accent: #ff0000;
 
    /* Other */
    --like-button-color: var(--major);
-   --save-icon-color: var(--major);
    --floppy-icon-color: var(--major);
    --main-font: "Inter-Variable";
    --special-font: "PressStart2P";
@@ -71,12 +77,15 @@
       --major: #00cc14;
       --minor: #000;
 
+      /* Font */
+      --content-text-wght: 465;
+      --content-title-wght: 785;
+
       /* Colors of LIKE */
       --accent: #ff0000;
 
       /* Other */
       --like-button-color: var(--major);
-      --save-icon-color: var(--major);
       --floppy-icon-color: var(--major);
       --main-font: "Inter-Variable";
       --special-font: "PressStart2P";
