@@ -6,14 +6,11 @@
 
    /* Colors of LIKE */
    --accent: #ff0000;
-   --sparks: #ff0000;
-   --contour: #000;
-   --main-body: #ff0000;
-   --core: #fff;
 
    /* Other */
    --like-button-color: var(--minor);
    --save-icon-color: var(--minor);
+   --floppy-icon-color: var(--minor);
    --main-font: "Inter-Variable";
    --special-font: "PressStart2P";
    --main-background: repeating-linear-gradient(
