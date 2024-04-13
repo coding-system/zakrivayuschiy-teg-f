@@ -285,12 +285,6 @@
    box-shadow: 2px 2px 0 0 var(--major);
 }
 
-/* 
----
----
----
---- */
-
 .card__icon-button {
    background: none;
    display: flex;
