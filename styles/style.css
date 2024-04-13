@@ -13,6 +13,11 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
+
+::selection {
+   background-color: #4ec95b;
+   color: var(--minor);
+}
 .page {
    max-width: 700px;
    margin: 100px auto;
@@ -48,7 +53,7 @@
 }
 
 .main-title {
-   font-family: var(--special-font), Arial, Helvetica, sans-serif;
+   font-family: var(--special-font), Impact, fantasy;
    font-size: 49px;
    font-weight: 400;
    text-transform: uppercase;
@@ -56,7 +61,7 @@
 }
 
 .slogan {
-   font-family: var(--special-font), Arial, Helvetica, sans-serif;
+   font-family: var(--special-font), Impact, fantasy;
    font-size: 14px;
    font-weight: 400;
    text-transform: uppercase;
@@ -82,11 +87,11 @@
    position: relative;
    background: none;
    border: none;
-   font-family: var(--special-font);
+   font-family: var(--special-font), Impact, fantasy;
    text-transform: uppercase;
    font-size: 14px;
    color: var(--major);
-   transition: 0.2s ease;
+   transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:hover {
@@ -94,6 +99,7 @@
 }
 
 .theme-menu__button:disabled {
+   pointer-events: none;
    opacity: 0.6;
 }
 
@@ -118,7 +124,7 @@
    height: 2px;
    transform: scale(0);
    transform-origin: left;
-   transition: transform 0.2s ease;
+   transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -152,10 +158,7 @@
 .card__title {
    padding: 4px 10px 6px 10px;
    font-size: 18px;
-   /* font-weight: bold; */
    font-variation-settings: "wght" var(--content-title-wght);
-   letter-spacing: 0%;
-   line-height: auto;
 }
 
 .card__picture {
@@ -166,7 +169,7 @@
    position: absolute;
    right: 10px;
    top: 25px;
-   font-family: var(--special-font), Arial, Helvetica, sans-serif;
+   font-family: var(--special-font), Impact, fantasy;
    font-size: 14px;
    font-weight: 400;
    text-transform: uppercase;
@@ -243,7 +246,7 @@
 .button {
    background: var(--minor);
    border: 2px solid var(--major);
-   font-family: var(--special-font), Arial, Helvetica, sans-serif;
+   font-family: var(--special-font), Impact, fantasy;
    font-size: 14px;
    line-height: 90%;
    position: relative;
@@ -386,7 +389,7 @@
 .dialog__text {
    width: 198px;
    font-size: 14px;
-   font-family: var(--special-font);
+   font-family: var(--special-font), Impact, fantasy;
    font-weight: normal;
    color: var(--major);
    text-transform: uppercase;
