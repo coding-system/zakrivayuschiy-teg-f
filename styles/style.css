@@ -229,8 +229,8 @@
    line-height: 21px;
 }
 
-.card__text-special {
-   padding-top: 0;
+.card__text:last-of-type {
+   padding-top: 0px;
 }
 
 .like {
