@@ -18,7 +18,6 @@
 .like-icon .sparks {
    fill: var(--minor);
    opacity: 1;
-   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon .contour {
@@ -30,13 +29,13 @@
 .like-icon .main-body {
    fill: var(--minor);
    opacity: 0;
-   transition: fill 0.3s linear 0.05s;
+   transition: fill 0.3s linear;
 }
 
 .like-icon .core {
    fill: var(--minor);
    opacity: 0;
-   transition: fill 0.3s linear 0.05s;
+   transition: fill 0.3s linear 0.03s;
 }
 
 /* Hover */
@@ -93,7 +92,7 @@
 }
 
 /* Heart scale */
-.card:has(.is-liked) .heart {
+.like-icon.is-liked .heart {
    animation-name: heart-is-liked;
    animation-duration: 0.3s;
    animation-delay: 0.1s;
@@ -104,7 +103,7 @@
 }
 
 /* Sparks light */
-.card:has(.is-liked) .sparks {
+.like-icon.is-liked .sparks {
    animation-name: sparks-is-liked;
    animation-duration: 0.3s;
    animation-delay: 0.3s;
