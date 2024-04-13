@@ -93,7 +93,7 @@
 }
 
 /* Heart scale */
-.card__item:has(.is-liked) .heart {
+.card:has(.is-liked) .heart {
    animation-name: heart-is-liked;
    animation-duration: 0.3s;
    animation-delay: 0.1s;
@@ -104,7 +104,7 @@
 }
 
 /* Sparks light */
-.card__item:has(.is-liked) .sparks {
+.card:has(.is-liked) .sparks {
    animation-name: sparks-is-liked;
    animation-duration: 0.3s;
    animation-delay: 0.3s;
